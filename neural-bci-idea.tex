@@ -1,0 +1,121 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Possible methods to decipher the neural code from computer programming perspective}
+
+\author{\IEEEauthorblockN{Libo Liu}
+\IEEEauthorblockA{\textit{Viterbi School of Engineering} \\
+\textit{University of Southern California}\\
+Los Angeles, CA, USA \\
+liboliu@usc.edu}
+}
+\maketitle
+
+\begin{abstract}
+This paper is focused on hypotheses about neuron signal capture and related experiment design.
+\end{abstract}
+
+\begin{IEEEkeywords}
+neuron signal, brain computer interface, memory experiment
+\end{IEEEkeywords}
+
+\section{Introduction}
+One of the major challenges for the modern neuroscience is to understand how the human brain encodes and stores information. The position of memory existence was identified. However, its process of formation and retrieval has not been revealed yet \cite{b1}. Recently, studies have been focused mostly on visual, auditory and physical locomotion neurons because discernible feedback could be easily collected and the locations of these neurons in the brain are congregated in the first few surface layers of cerebral cortex. 
+
+Stanley et al. successfully reconstructed what a cat saw by connecting electrodes with 177 neuron cells in the brain and displayed rebuilt images on a computer by the data transferred from electrodes \cite{b3}. The experiment aimed to analyze ensemble neural responses from cat's visual cortex using invasive brain computer interface. Sound signals were also restored through non-invasive multi-electrode arrays over the human auditory cortex \cite{b2}. As it is almost impossible to implement surgical probes to a living human brain legally and morally, invasive auditory signal retrieval experiments were also conducted on the auditory neurons of grasshoppers and ferrets \cite{b4,b5} whose sound wave was directly recovered from the subjects' neuron fires. 
+
+Brain Computer Interface (BCI) binds the computer with biological neuron cells. Invasive BCI is a kind of electrodes that can be directly implanted into the brain through surgery to capture signals from neuron cell. Compared with non-invasive BCI which stays outside of brain and measures EEG to collect brain data, invasive BCI is inside of the brain and not limited to gather electrical signals. It is also capable of capturing more consistent and precise data with little interference rather than EEG which easily fills with noises from the outside world like phone cellular signals.
+
+Despite the rapid development of neuroscience and related tools, the research on how human cognition works has not progressed recently due to the lack of effective methods. This paper will propose new possible hypothetical methods from computer programming perspective and design control experiments on animals to retrieve enough feedback in order to study these neurons which can not be damaged and may define human cognition.
+
+\section{Experiment Proposals}
+
+The experiment proposals are designed to mimic the procedure of programming debugging, including tracing debugging and automated testing. The purpose of such proposals is to suggest an approach of debugging brain functionalities, like memory, and collecting data of related behavior states which only human could describe. All experiments are not verified, nor implemented. Neither of these tests are focused on one specific brain functionality. Due to the lack of surgical experience and related knowledge, these experiments may be impossible to implement in reality. However, they are all controlled experiments. The logic and conclusion of the experiments can be deducted from two premises.
+
+One premise is that the general methodologies of most kinds of neural information delivery are cataloged into two major classes based on the carrier types. One is the releasing and capturing of neurotransmitters in the synaptic cleft between neuron cells. The other is the changing of the level of $\text{Na}^{+}$ and $\text{K}^{+}$ inside a neuron cell.  
+
+The other premise is that the long term memory formation is related to the generation of protein and the presence of new synapses.
+
+All experiments should be performed after they are approved by Animal Care and related Use Committee.
+
+\subsection{Proposal One: Extra stimulates}
+
+This design is inspired by the black-box testing and the tracing debug method in computer programming. The primary intention is to apply artificial stimulates to a specific neuron or area of the brain in order to observe output reactions.
+
+In this experiment, subjects in the same condition and gender are divided into four groups named Group A, B, C, D. Group A and B are control sets.
+
+Different concentrations of artificial neurotransmitters or $\text{Na}^{+}$ and $\text{K}^{+}$ solutions are prepared according to the object of studies. 
+
+All subjects are anesthetized with the same level dose of anesthetic. Group B, C and D are operated with craniotomy followed by the identical life maintenance measure. Group B's incisions are sutured without other procedures. Group C is injected with one specific solution into the exact position of the objective neuron with injector whose radius is smaller than 10$\mu$m. The targeted position of the neurotransmitter solution is the neuron's synapse. As for $\text{Na}^{+}$ and $\text{K}^{+}$ solution, it is the axon hillock of the neuron cells.
+
+Group D is injected with the same solution as Group C, but the quantity of the solution covers the local area where the neuron cell located.
+
+After all the vital indicators return to acceptable values, EEG, muscle movements and the object of study is recorded for later analysis.
+
+\subsection{Proposal Two: Protein duplication}
+
+This experiment is designed to research whether memory could be copied. According to the second premise,  when new protein or synapse generates, a long term memory is formed. Thus, if the neural coding algorithm is the same between different individuals, it is possible that the memory will be downloaded to another  individual after the protein and synapse are transferred to it.
+
+Three groups (A, B, C) are needed in this experiment. Group A is the control group. All subjects should be newborns and raised to toddler period which is 4~6 weeks for cats in identical condition using the same special food with trackable amino acid. Subjects in Group B should have a counterpart in Group C which has no transplant rejection with it.
+
+Use MRI or other device to track Group A's and B's protein and synapse changes in the brain before and after successful Pavlov's dog training experiments using subjects and bells. According to the differences in Group B, different neurons and proteins from the subject in Group B are surgically transfer to its counterpart in Group C. 
+
+After the surgery, whether subjects in Group C could begin to salivate when the bell rings is observed and recorded.
+
+\section{Discussion}
+
+\begin{table}[htbp]
+\caption{Percentage of regional normal brain water content in 27 volunteers$^{\mathrm{*}}$ \cite{b6}}
+\begin{center}
+\begin{tabular}{l c}
+\hline\hline
+\multicolumn{1}{c}{\textbf{Region}}&{\textbf{Percentage of $f_w$}} \\ 
+\hline
+frontal white matter & $68.7 \pm 1.0$ \\
+posterior white matter & $69.6 \pm 1.1$ \\
+genu, corpus callosum & $67.6 \pm 1.2$ \\
+splenium, corpus callosum & $68.9 \pm 1.2$ \\
+head of caudate nucleus & $80.3 \pm 1.1$ \\
+lentiform nucleus & $77.1 \pm 1.6$ \\
+thanlamus & $75.8 \pm 1.2$ \\
+\hline
+\multicolumn{2}{l}{$^{\mathrm{*}}$Values are presented as the mean $\pm$ the population standard deviation.}
+\end{tabular}
+\label{tab1}
+\end{center}
+\end{table}
+
+As shown in Table \ref{tab1} \cite{b6}, the percentage of brain water content keeps a relatively consistent number in different parts of brains about 60\%-80\%. Water content occupies an enormous portion of brains. Thus, the status of water content could represent the condition of brain cells. In addition, the control of aqueous solution in the experiment proposal one is also crucial to the success of the experiment.
+
+
+\section{Conclusion}
+
+When result sets from the first experiment proposal on different neurons reach a comprehensive level, a neural reaction simulation system could be built on them. Experiments have to respect moral rules, human rights and other animal use regulations, which may limit the progress of neuroscience. Thus, the approach of the second experiment proposal may provide a possible mechanism to bypass some limitations. 
+
+These experiment proposals based on the assumption that all the arrangement and implementation of the brain system may conform to a certain pattern which could be logically consistent with the modern design methodology. Although such technique has not been proved yet, nor the detailed procedures have been depicted in the proposals, this paper tries to offer a possible bottom-up approach to conduct research on the neuroscience of the human brain. Most research is focused on data that are captured from neurons, like fire rates, from neurons and reconstruct the data to the original format like image or audio. The neural decoding algorithm is important to understand how neurons transfer and encode information. From the bottom-up perspective, researchers actually could focus on how the data, like fire rates, is understood by the brain rather  than how to reconstruct it back. The essential hypothesis of this paper is that the neural coding is the pathway to or the part of the human's cognition rather than the cognition will decode the data again.
+
+
+\begin{thebibliography}{00}
+\bibitem{b1} G. Miller, "How Are Memories Stored and Retrieved?" Science, vol. 309, (5731), pp. 92, 2005. 
+\bibitem{b2} G. B. Stanley, F. F. Li and Y. Dan, "Reconstruction of natural scenes from ensemble responses in the lateral geniculate nucleus," The Journal of Neuroscience, vol. 19, (18), pp. 8036-8042, 1999.
+\bibitem{b3} B. N. Pasley et al, "Reconstructing speech from human auditory cortex," PLoS Biology, vol. 10, (1), 2012.
+\bibitem{b4} C. K. Machens et al, "Representation of acoustic communication signals by insect auditory receptor neurons," The Journal of Neuroscience : The Official Journal of the Society for Neuroscience, vol. 21, (9), pp. 3215-3227, 2001.
+\bibitem{b5} N. Mesgarani et al, "Influence of context and behavior on stimulus reconstruction from neural activity in primary auditory cortex," J. Neurophysiol., vol. 102, (6), pp. 3329-3339, 2009. 
+\bibitem{b6} P. P. Fatouros and A. Marmarou, "Use of magnetic resonance imaging for in vivo measurements of water content in human brain: method and normal values," J. Neurosurg., vol. 90, (1), pp. 109-115, 1999. 
+\end{thebibliography}
+
+
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{photo.jpg}}]{Libo Liu}
+ is a graduate student pursuing for his Master of Science degree in Computer Science at the University of Southern California. His expertise is in web development, mobile application development and hardware design. As a full-stack developer, he started his own IoT business back in Beijing, China and led his team to develop distributed wearable devices and mobile applications for monitoring status of human body. His current research interests are spatial computing, web development and neuroscience.
+\end{IEEEbiography}
+\end{document}
